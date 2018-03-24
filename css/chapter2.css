@@ -1,0 +1,24 @@
+.main
+{
+    background-color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+h1, h2
+{
+    font-family: inherit;
+    background-color: dimgrey;
+    padding: inherit;
+}
+p
+{
+    font-family: inherit;
+    /* Не все браузеры поддерживают CSS3 так что имеет смысл задавать сначала
+     без прозрачерсть, а потом с ней (для переписания значения)  */ 
+    background-color: rgba(234, 234, 234);
+     /* Можно задавать прозрачность 2 способами - через opacity и через 
+     rgba(red,gren,blue,alpha), где альфа - это прозрачность */   
+    background-color: rgba(234, 234, 234, 0.5);
+    /* Текст не меняет значение прозрачности */ 
+    padding: inherit;
+}

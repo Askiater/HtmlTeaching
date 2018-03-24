@@ -1,0 +1,54 @@
+<!-- Определение html документа как написанного на HTML5 -->
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Its metadata work here">
+      <meta name="robots" content="noindex">
+      <!-- Задает, кешируется ли данная страница в браузерах -->
+      <meta http-equiv="pragma" content="no-cache">
+      <!-- <META HTTP-EQUIV="REFRESH" CONTENT="N;URL=адрес"> 
+        N - время в секундах (целое число)
+        URL - адрес документа (можно не указывать)
+        Используется для автоматической перезагрузки указанной страницы через
+        заданное время. Если URL не указан, броузер перезагрузит текущий 
+        документ [как если бы пользователь нажал кнопку "Reload" 
+        ("Перезагрузка") на панели браузера]-->
+      <title>Chapter8</title>
+  </head>
+  <body>
+    <h1>Work with additional Meta Data</h1>
+
+    <!-- Классы позволяют обьединять различные элементы 
+        (без использования id) единым типом (в единую группу) 
+        оформления через CSS -->
+    <p class="important"> FUUUCK OFFF! </p>
+
+    <!-- Div-ы являются блочными структурами позволяющие обьединять по смыслу 
+        несколько элементов в единый блок -->
+    <div class="important">
+        <abbr title="Professor"> Профессор...</abbr> <br/>
+        <acronym title="У него всегда были проблемы">
+            Этот человек не менялся
+        </acronym> <br>
+        <img src="../Image/syn.jpg" alt="Good Syndra!" title="Also pretty good!">
+    </div>
+
+    <!-- Span является аналогом div-ов, но является встроенным элементом
+         (Используется для окружения части текста, когда никакой другой элемент
+          для этого не подходит; )-->
+    <p class="important"> FUUUCK OFFF! <span class="very_important">Say very old Professor!</span> </p>
+  
+    <!-- i frame - это окна других сайтов врезанную в вашу страницу.
+         Они могут быть seamless - бесшовно вшиты, а могут иметь большую 
+         рамку через frameborder-->
+         <iframe width="700" height="500" src="Chapter3.html" seamless="seamless" frameborder="1" scrolling="no">
+        </iframe>
+
+        <!-- Использование специальных символов -->
+        <p>
+            &copy; Its copyright <br>
+            &reals; Its some good stuff!
+        </p>
+</body>
+</html>

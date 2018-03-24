@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Chapter6</title>
+    </head>
+    <body>
+        <h1>Table working here!</h1>
+        <table title="Super table">
+            <tr>
+                <td>Some pretty important data</td>
+                <td>Important 2</td>
+                <td>Important 3</td>
+                <td>IIIIIIIIIIIIIIII</td>
+            </tr>
+            <tr>
+                <td>Some pretty important data 1</td>
+                <td>Important 4</td>
+                <td>Important 5</td>
+                <td/>
+            </tr>    
+            <tr>
+                <td>Some pretty important data 1</td>
+                <td>Important 4</td>
+                <td>Important 5</td>
+                <td>BEATCH~~~~</td>
+            </tr>    
+        </table>
+        <hr/>
+        <table>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Бичары2</th>
+                <th scope="col">Бичары3</th>
+            </tr>
+            <tr>
+                <th scope="row">Подбичары1, которые мрази</th>
+                <td>Ахам</td>
+                <td>Махакам</td>
+            </tr>
+            <tr>
+                <th scope="row">Подбичары1, которые ублюдки</th>
+                <td>Биззуб</td>
+                <td>Макар</td>
+            </tr>
+        </table>
+        <hr/>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">Properties1</th>
+                <th scope="col">Properties2</th>
+                <th scope="col">Properties3</th>
+            </tr>
+            <tr>
+                <th scope="row">First one</th>
+                <td>Im the first one</td>
+                <td colspan = "2">Im the second one that is better</td>
+            </tr>
+        </table>
+        <hr/>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">Properties1</th>
+                <th scope="col">Properties2</th>
+            </tr>
+            <tr>
+                <th scope="row">First one</th>
+                <td rowspan="3">Im the first one!</td>
+                <td>Im the second one1 </td>
+            </tr>
+            <tr>
+                <th scope="row">Second one</th>
+                <td>Im the second one2 </td>
+            </tr>
+        </table>
+        <hr/>
+        <!-- Длинные таблицы с head-ером и последним элементом, полезны при экранном чтении и создании каскадных таблиц стилей-->
+        <table border="2" bgcolor="#efefef">
+            <thead>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Place</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1 января</th>
+                    <td rowspan="2">12:23</td>
+                    <td>Saint-Petersburg</td>
+                </tr>
+                <tr>
+                    <th>2 января</th>
+                    
+                    <td>Saint-Petersburg</td>
+                </tr>
+                <tr>
+                    <th>20 января</th>
+                    <td>12:11</td>
+                    <td>Saint-Petersburg</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="3">ВСЕ ПО ЦЕНЕ ОДНОГО!</th>
+            </tfoot>
+        </table>
+    </body>
+</html>

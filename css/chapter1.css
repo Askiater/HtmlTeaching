@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+    background-color: beige;
+}
+h1, h2, h3 { 
+    font-family: 'Courier New', Courier, monospace;
+    color: darkmagenta; 
+}
+р {
+    color: black;
+} 

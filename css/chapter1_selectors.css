@@ -1,0 +1,30 @@
+* /* Селектор * применяется ко ВСЕМ элементы на странице */
+{
+    font-family: 'Times New Roman', Times, serif ;
+}
+.important
+{
+    font-family: 'Times New Roman', Times, serif ;
+    /* !Important позволяет задать значение атрибута не позволяя ее 
+    перекрывать (правилом "Правило последнего задания атрибута") */
+    color: red !important;
+}
+figure.centerFigure
+{
+    align-content: center;
+}
+h2, h3, h4
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: salmon;  
+}
+#top
+{
+    font-family: fantasy;
+    font-size: x-large;
+    color: goldenrod;
+}
+li>a
+{
+    color: gold;
+}

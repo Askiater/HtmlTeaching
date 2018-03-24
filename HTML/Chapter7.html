@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>Chapter7</title>
+    </head>
+    <body>
+
+    <h1>There is some form working!</h1>
+    <form method="GET" action="https://www.youtube.com/watch?v=iU8TzfdPnfQ&list=PLDDB91587DF81478D&index=3">
+        <p>
+            Username:
+            <!-- Значение name передается в паре с значением данного поля на сервер (тип передачи зависит от метода в form-е) -->
+            <input type="text" name="username" id="username" maxlength="12" size="12">
+        </p>
+        <p>
+            Password:   
+            <input type="password" name="password" id="password" maxlength="12" size="12">
+        </p>
+
+        <p>Comments:</p>
+        <!-- Значение cols и rows задается в символах, и длиннах единичной строки соответсвенно-->
+        <textarea name="comments" id="commentsField" cols="30" rows="10">Input your thinking here!</textarea>
+        
+        <!-- Значение атрибута name должно совпадать для всех возможноых выборов радиокнопки, иначе сервер будет рассматривать это как другую группу радиокнопок -->
+        <p>How are you, today? <br/>
+            <input type="radio" name="mood" id="radioGood" value="Good" checked="checked" /> Good,thx!
+            <br>
+            <input type="radio" name="mood" id="radioBad" value="Bad"/> Fuck off!
+            <br>
+            <input type="radio" name="mood" id="radioOk" value="OK"/> Im fine, thx!
+            <br>
+        </p>
+        
+        <!-- Значение атрибута name должно совпадать для всех возможноых выборов checkbox-а, иначе сервер будет рассматривать это как другую группу checkbox-ов -->
+        <p> Where are you like to have sex? <br>
+            <input type="checkbox" name="where" id="checkRoad" value="road"> In road!
+            <br>
+            <input type="checkbox" name="where" id="checkHome"  value="home" checked="checked"> Only home!
+            <br>
+            <input type="checkbox" name="where" id="checkUnder" value="under"> In underground station!
+            <br>
+        </p>
+
+        <!-- Если selected не выбран, по умалчанию ставиться равным первому элементу -->
+        <p> Where are you like to eat? <br>
+            <select name="eat">
+                <option value="home" selected="selected">Home</option>
+                <option value="rest">In restorain</option>
+                <option value="work">In my work!</option>
+            </select>
+        </p>
+
+        <!-- Списки с множественным выбором, аналогичны обычным, однако выбрать несколько вариантов можно с зажатым Ctrl -->
+        <p> Where are you like to have breakfast? <br>
+            <select size="3" multiple="multiple" name="breakfast">
+                <option value="home" selected="selected">Home</option>
+                <option value="rest">In restorain</option>
+                <option value="work">In my work!</option>
+                <option value="ass" selected="selected">In your ass beatch!</option>
+            </select>
+        </p>
+        <!-- Кнопка submit может не иметь значение атрибудта name -->
+        <input type="submit" id="submitForm1" value="Send!">
+        
+    </form>
+
+    <!-- При работе с загрузкой фалов всегда имеет смысл использовать значение атрибута метод = post -->
+    <form action="https://www.youtube.com/watch?v=iU8TzfdPnfQ&list=PLDDB91587DF81478D&index=3" method="POST">
+        <p>Download your <em>beautifull</em> voice into our library <br>
+            <input type="file" name="voice" id="voice"> <hr>
+            <input type="submit" id="submitForm2" value="Send your voice to us!">
+        </p>
+    </form>
+
+    <form method="POST" action="https://vk.com/askiatergx">
+        <p>Give your image to us:</p>
+        <p>
+            <input type="file" name="img" id="img" value="Upload image">
+        </p>
+        <p>          
+            <!-- Тип кнопки image работает аналогично кнопки подтверждения (submit) -->
+            <input type="image" src="../Image/update.svg" alt="Update image">
+        </p>
+    </form>
+
+    <hr>
+    
+    <blockquote>For my next trick i will make you text dissapear!</blockquote> 
+
+    <form action="https://vk.com/im" method="GET">
+        <button>
+            <img src="../Image/update.svg" alt="Update image"> <b>UPLOAD ME!</b>
+        </button>
+        <!-- Отправка дополнительных скрытых данных, к примеру откуда был отправлен запрос -->
+        <input type="hidden" name="hidden" value="PageChapter7">
+    </form>
+
+    <hr>
+
+    <!-- Использование label-ов -->
+    <form action="../index.html">
+         <!-- Использование атрибута for в лейблах-->
+         <label for="product">Products:</label>
+         <select id="product">
+            <option value="chicken">Chicken</option>
+            <option value="potato">Potato</option>
+            <option value="meal">Meal</option>
+         </select>
+         <br>
+         <!--  Нажатие на метку с указателем for будет расчитано как нажатие на сам элмент формы -->
+         <label for="name">Name:</label>
+         <input type="text" name="name" id="name">
+    </form>
+
+    <!-- Группировка элементов формы с помощью fieldset (группировка по смыслу!) -->
+    <form method="GET" action="https://www.youtube.com/watch?v=5fSBrol13fo&list=PLHB7pQtzGtiWCUCOfh1rFyRHk-EkxvZXa&index=5">
+        <fieldset>
+            <legend>Your information:</legend>
+            <label for="name1">Name</label> <br>
+            <input type="text" name="name1" id="name1"> <br>
+            <label for="address">Email</label> <br>
+            <input type="text" name="address" id="address"> <br>
+            <label for="card">Bank Card</label> <br>
+            <input type="text" name="card" id="card"> <br>
+            <input type="submit" value="Send it!">
+        </fieldset>
+    </form>
+    
+    <br>
+    <hr>
+    <br>
+
+    <!-- ******************************************HTML5 Forms abilities******************************************-->   
+    <!-- Использование параметров ранее облуживающихся с помощью JavaScript, а ныне исполняемая браузером - required поля! -->
+    <form method="POST" action="https://www.youtube.com/watch?v=5fSBrol13fo&list=PLHB7pQtzGtiWCUCOfh1rFyRHk-EkxvZXa&index=5">
+        <fieldset>
+            <legend>Your information (part 2):</legend>
+            <label for="name2">Name</label> <br>
+            <input placeholder="Name..." required="required" type="text" name="name2" id="name2"> <br>
+            <label for="address1">Email</label> <br>
+            <input placeholder="Address..." required="required" type="text" name="address1" id="address1"> <br>
+            <label for="card1">Bank Card</label> <br>
+            <input placeholder="Bank Card ..." required="required" type="text" name="card1" id="card1"> <br>
+            <input type="submit" value="Send it!">
+        </fieldset>
+    </form>
+
+
+    <!-- Использование как поле даты,а не как просто тектовое поле -->
+    <form method="POST" action="https://vk.com/im?peers=207525627">
+        <fieldset>
+            <legend>Send me your face!</legend>
+            <label for="face">Your face file!</label> <br>
+            <input type="file" name="face" id="face"> <br>
+            <label for="date">Date of picture</label> <br>
+            <input type="date" name="date" id="date"> <br>
+            <input type="submit" value="Send it!">    <br>
+        </fieldset>
+    </form>
+
+    <hr>
+    <!-- Введение URL адеса и емейл почты без проверки их джава скриптом (проверка через HTML 5) -->
+    <form action="https://vk.com/im?peers=207525627" method="POST">
+        <label for="emailAddress">Say us your email, please!</label> <br>
+        <input required="required" type="email" name="emailAddress" id="emailAddress"> <br>
+        <label for="URL">Say us your site, please!</label> <br>
+        <input required="required" type="url" name="URL" id="URL"> <br>
+        <input type="submit" value="Send it!"> <br>
+    </form>
+
+    <hr>
+    <!-- Выполнять поисковые запросы прямо из страницы -->
+    <form action="www.google.com" method="get">
+        <label for="search">YOU CAN SEARCH NOW!</label> <br>
+        <input placeholder="Start!" type="search" name="search" id="search"> 
+        <input type="submit" value="Find it!"> <br>
+    </form>    
+
+    </body>
+</html>

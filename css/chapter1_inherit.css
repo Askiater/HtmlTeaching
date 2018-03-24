@@ -1,0 +1,13 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+    padding: 15px;
+}
+.container
+{
+    padding: inherit; /* Позволяет наследовать значение от родительского элемента */
+    font-family: inherit;
+    border: firebrick solid 2px;
+    background: darkslategray;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="description" content="Its FLASH WORK!"> 
+<meta http-equiv="pragma" content="no-cache"> 
+<title>Chapter9</title> 
+</head> 
+<body> 
+
+    <h1>There is some media working!</h1>
+
+    <!-- Рассмотрим возможнсти html 5 --> 
+    <video src="../Media/file.mp4" 
+    poster="../Image/diana.jpg" 
+    controls 
+    preload="metadata"> 
+        Some good film here! 
+    </video> 
+
+    <hr>
+
+    <p><i>Music for you amusement!</i></p>
+    <!-- Возможности аудио в html 5 --> 
+    <audio src="../Media/file.mp3" 
+    preload="metadata" 
+    loop     
+    controls>
+        You can'not listen this :(
+    </audio>
+
+    <!-- Также для определение - какой именно тип данных 
+        (загружаемые js или flash или HTML5 возможности) не воспринимается 
+        браузером можно помещать элемент div внутрь видео, 
+        а в div помещать информацию об ошибке  -->
+</body> 
+</html>
