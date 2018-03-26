@@ -70,3 +70,39 @@ a
     text-decoration-line: none;
     /* Позволяет также убрать стандартные линии в ссылках */
 }
+p.ourfont::first-letter /* Посзволяет создавать псевдо элементы, которые КАК бы создают новые элементы в коде*/
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link /* Псевдокласс, который применяется к непосещенным ссылкам */
+{
+    color: aqua;
+}
+a:visited /* Псевдокласс, который отвечает за оформление посещенных ссылок*/
+{
+    color: blue;
+    text-decoration-line: none;
+}
+button.superbutton
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: brown;
+    color: bisque;
+    text-decoration-line: overline underline;
+    padding: 30px;
+    margin: 5px;
+}
+button.superbutton:hover /* Еще один псввдокласс отвечающий за поведение при наведении мышки */ 
+{
+    color: cornflowerblue;
+}
+button.superbutton:active /* Применяется когда пользователь активирует элемент (к примеру нажимает на кнопку) */
+{
+   background-color: chartreuse;
+   color: black;
+}
+/* Фокус какого либо элемента возникает в когда браузер понимает, что вы готовы взаимодействовать 
+с элементом на странице (для перемещения по таким активным элементам используется табуляция) */
+/* При использовании пссевдоклассы перечисляются в следующем порядке:
+   link; visited; hover; focus; active;*/
+   

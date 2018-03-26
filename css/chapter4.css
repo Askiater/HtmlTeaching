@@ -1,0 +1,49 @@
+div.box
+{
+    height: 500px;
+    /* Напрямую задаетр азмеры в пикселях*/
+    width: 500px;
+    background-color: blanchedalmond;
+    border-width: 5px;
+    /* Ширина задаваемой границы блока */
+    border-style: dashed;
+    /* Может задавать стиль границ блоков. Можно отдельно задавать стили каждой стороны - border-bottom-style ... */
+
+}
+div p
+{
+    height: 35%;
+    /* Процентное задание размера задает развер относителньо родительского эолемента */
+    width: 60%;
+    background-color: brown;
+    color: azure;
+}
+h2
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 155%;
+  line-height: 1.1em;
+  border-bottom: 2px solid blueviolet;
+  /* Последователньо задается 
+  border-bottom-width; 
+  border-bottom-style; 
+  border-bottom-color;
+  И именно в таком порядке!*/
+  color: blueviolet;
+  width: 300px;  
+}
+.max
+{
+    min-width: 30%;
+    min-height: 55%;
+    overflow: scroll;
+    /* Устанавливает правило которое применяется при недостаточности размера блока для его контента*/
+}
+.important
+{
+    margin-left: auto;
+    margin-right: auto;
+    /* При указании таких параметров "полей" будет выполняться центрация элемента. 
+    Однако если не указано свойство width, то оно займет все окно браузера*/
+    width: 500px;
+}
