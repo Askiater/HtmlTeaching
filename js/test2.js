@@ -11,10 +11,11 @@ var menu = {
 }
 
 for (const key in menu) {
-    if (isNumeric(menu[key])) {
-        menu[key] *= 2;
+    if (isNumeric(menu[key]) || parseInt(menu[key])) {
+        menu[key] = parseInt(menu[key]) * 2;
     }
 }
 
+console.log(parseInt(menu['margin']));
 
 console.log(menu)

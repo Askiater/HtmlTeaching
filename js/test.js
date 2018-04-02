@@ -10,6 +10,7 @@ function isEmpty(obj) {
 
 function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n)
+}
 
 var salaries = {
     'Fred'      : 300,
@@ -17,7 +18,6 @@ var salaries = {
     'Draskel'   : 450,
     'Fraer'     : 1200
 }
-
 
 var maxValue = 0;
 var maxValueName = '';
