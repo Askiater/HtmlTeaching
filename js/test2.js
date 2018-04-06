@@ -18,4 +18,4 @@ for (const key in menu) {
 
 console.log(parseInt(menu['margin']));
 
-console.log(menu)
+console.log(menu);
