@@ -1,0 +1,10 @@
+{
+  "name": "HtmlTeaching",
+  "version": "0.0.1",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "start": "http-server ./ -a localhost -p 4200 -c-1"
+  }
+}
