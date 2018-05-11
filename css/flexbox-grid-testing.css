@@ -18,16 +18,36 @@ html, body {
 .square#sqr1{
     background-color: red;
     height: 100px;
-    width: 100px;
+    width: 10%;
 }
 .square#sqr2{
-    height: 250px;
-    width: 150px;
+    height: auto;
+    width: auto;
     background-color: yellow;
+    /* Помнить что padding - это отступ контента блока от блока в котором прописано это свой-ство*/
+    padding: 10px;
+    /* Дисплей grid позволяет нам распологать все то что находиться внутри этого блока в некой сетке */
+    display: grid;
+    grid-template-columns: 30% 10% auto;
+    grid-gap: 5px;
 }
+
+#inner1 {
+    background-color: #0088dd;
+    color: white;
+}
+#inner2 {
+    color: white;
+    background-color: #000088;
+}
+#inner3 {
+    color: white;
+    background-color: #0088aa;
+}
+
 .square#sqr3{
-    height: 180px;
-    width: 300px;
+    height: auto;
+    width: 25%;
     background-color: green;
     display: flex;
     flex-direction: row;
